@@ -9,13 +9,15 @@ nama_jurusan BIGINT,
 
 CREATE TABLE Mahasiswa(
 id BIGINT PRIMARY KEY,
-NPM INT,
-nama VARCHAR,
+NPM INT NOT NULL,
+nama VARCHAR(255) NOT NULL,
 tanggal_lahir DATE,
-alamat VARCHAR,
-no_hp INT,
-jurusan_id BIGINT FOREIGN KEY,
-dosen_wali_id BIGINT FOREIGN KEY,
+alamat VARCHAR(255),
+no_hp BIGINT,
+jurusan_id BIGINT,
+dosen_wali_id BIGINT,
+FOREIGN KEY (jurusan_id) REFERENCES jurusan(id),
+FOREIGN KEY (dosen_wali_id) REFERENCES Dosen_Wali(id)
 );
 
 CREATE TABLE Dosen_Wali(
