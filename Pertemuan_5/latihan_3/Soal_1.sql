@@ -23,8 +23,8 @@ FOREIGN KEY (dosen_wali_id) REFERENCES Dosen_Wali(id)
 CREATE TABLE Dosen_Wali(
 id BIGINT PRIMARY KEY,
 NIP BIGINT,
-nama VARCHAR,
+nama VARCHAR(255),
 tanggal_lahir DATE,
-alamat VARCHAR,
+alamat VARCHAR(255),
 no_hp INT,
 );
