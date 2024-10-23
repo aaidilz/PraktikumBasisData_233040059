@@ -1,4 +1,4 @@
-USE tugas;
+use tugas;
 
 INSERT INTO jurusan (nama_jurusan)
 VALUES

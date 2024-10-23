@@ -1,3 +1,5 @@
+use tugas;
+
 INSERT INTO Dosen_Wali (id, NIP, nama, tanggal_lahir, alamat, no_hp)
 VALUES
 (1, '123456789', 'Dr. Ahmad Hidayat', '1980-05-12', 'Jl. Merdeka No. 1', '081234567890'),
